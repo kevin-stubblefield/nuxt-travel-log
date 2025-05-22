@@ -2,7 +2,7 @@
 const props = defineProps<{
   label: string;
   icon: string;
-  href: string;
+  href?: string;
   showLabel: boolean;
 }>();
 
