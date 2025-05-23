@@ -6,3 +6,13 @@ declare module "h3" {
     user?: Omit<User, "id"> & { id: number };
   }
 }
+
+export type LatLongItem = {
+  lat: number;
+  long: number;
+};
+
+export type MapPoint = {
+  id: number;
+  label: string;
+} & LatLongItem;
